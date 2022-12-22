@@ -59,7 +59,7 @@ nav {
 
 .splitedCard {
   text-align: center;
-
+ 
   div {
     padding: 25px 20px;
 
@@ -79,7 +79,7 @@ nav {
 .fullCard {
     width: 100%;
     text-align: center;
-    height: 630px;
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -144,3 +144,127 @@ footer {
     
 
 
+/// desktop design
+
+@media screen and ( min-device-width: 992px) {
+
+  // MOBILE DESIGN
+header {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/desktop/image-header.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+nav {
+  height: 5vh;
+  padding: 3vh;
+}
+
+#heroContainer {
+  h1 {
+    font-size: 1em;
+  }
+  #arrowDownImage {
+    height: 35%;
+  }
+}
+
+// Splited card Style
+
+
+.splitedCard{
+  flex-direction: row;
+
+  img {
+    width: 50%;
+  }
+
+  div {
+    padding: 0;
+        h2 {
+          font-family: baseStyle.$font-noto;
+          font-size: 3rem;
+        }
+  }
+}
+
+
+.fullCardContainer {
+  display: flex;
+  flex-direction: row;
+.fullCard {
+    width: 50%;
+    height: 80vh;
+    background-size:cover;
+    
+}
+#cherryCard {
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+}
+
+#tangarineCard {
+    background-image: url(../images/desktop/image-photography.jpg);
+}
+}
+#testimonialSection {
+
+    .cardContainer{
+        display: flex;
+        flex-direction: row ;
+        justify-content:center;
+    
+    .testimonialCards {
+        justify-content: space-evenly;
+        width: 20%;
+        height: 30vh;
+        padding: 5%;
+
+        img {
+            width: 30%;
+            border-radius: 100%;
+        }
+      
+      }
+    }
+}
+
+
+#imagesAside {
+    flex-wrap: wrap;
+    img {
+        width: 25%;
+    }
+}
+
+footer {
+    padding-top: 30px;
+    align-items: center;
+    background-color: baseStyle.$primary-DarkDarkCyan;
+    text-align: center;
+    #footerLogo {
+        width: 40%;
+    }
+
+    .footerLinksContainer {
+        width: 100%;
+        justify-content: space-evenly;
+        a {
+            padding-top: 30px;
+            text-decoration: none;
+            color: baseStyle.$neutral-GrayishBlue;
+        }
+    }
+    .footerIconsContainer {
+        padding: 30px ;
+        width: 45%;
+        justify-content: space-between;
+    }
+}
+    
+
+
+
+  
+}

@@ -69,7 +69,7 @@ nav img {
 .fullCard {
   width: 100%;
   text-align: center;
-  height: 630px;
+  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -125,6 +125,98 @@ footer .footerIconsContainer {
   padding: 30px;
   width: 45%;
   justify-content: space-between;
+}
+
+@media screen and (min-device-width: 992px) {
+  header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: bottom;
+  }
+  nav {
+    height: 5vh;
+    padding: 3vh;
+  }
+  #heroContainer h1 {
+    font-size: 1em;
+  }
+  #heroContainer #arrowDownImage {
+    height: 35%;
+  }
+  .splitedCard {
+    flex-direction: row;
+  }
+  .splitedCard img {
+    width: 50%;
+  }
+  .splitedCard div {
+    padding: 0;
+  }
+  .splitedCard div h2 {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 3rem;
+  }
+  .fullCardContainer {
+    display: flex;
+    flex-direction: row;
+  }
+  .fullCardContainer .fullCard {
+    width: 50%;
+    height: 80vh;
+    background-size: cover;
+  }
+  .fullCardContainer #cherryCard {
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+  }
+  .fullCardContainer #tangarineCard {
+    background-image: url(../images/desktop/image-photography.jpg);
+  }
+  #testimonialSection .cardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #testimonialSection .cardContainer .testimonialCards {
+    justify-content: space-evenly;
+    width: 20%;
+    height: 30vh;
+    padding: 5%;
+  }
+  #testimonialSection .cardContainer .testimonialCards img {
+    width: 30%;
+    border-radius: 100%;
+  }
+  #imagesAside {
+    flex-wrap: wrap;
+  }
+  #imagesAside img {
+    width: 25%;
+  }
+  footer {
+    padding-top: 30px;
+    align-items: center;
+    background-color: hsl(168deg, 34%, 41%);
+    text-align: center;
+  }
+  footer #footerLogo {
+    width: 40%;
+  }
+  footer .footerLinksContainer {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  footer .footerLinksContainer a {
+    padding-top: 30px;
+    text-decoration: none;
+    color: hsl(210deg, 4%, 67%);
+  }
+  footer .footerIconsContainer {
+    padding: 30px;
+    width: 45%;
+    justify-content: space-between;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
