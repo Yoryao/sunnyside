@@ -55,8 +55,33 @@ nav img {
   border: 1px solid black;
   text-align: center;
 }
-.splitedCard a {
+.splitedCard div {
+  padding: 25px 20px;
+}
+.splitedCard div h2 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 2rem;
+}
+.splitedCard div a {
   text-decoration: none;
+  color: hsl(212deg, 27%, 19%);
+  font-weight: bold;
+}
+
+#cherryCard {
+  height: 667px;
+  background-image: url(../images/mobile/image-graphic-design.jpg);
+  background-size: cover;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+#tangarineCard {
+  text-align: center;
+  height: 667px;
+  background-image: url(../images/mobile/image-photography.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */
