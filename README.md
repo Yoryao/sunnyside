@@ -24,11 +24,11 @@ Para la creación se utilizará HTML, Css (pudiendo utilizar un Sass como prepro
 
 3. Ramas de github
 
-- La rama *==main==* se utilizara para publicar el resultado del desarrollo.
+- La rama *main* se utilizara para publicar el resultado del desarrollo.
 
-- La rama *==dev==* se utilizará para mergear las distintas ramas y previsualizar el resultado antes de hacer el deploy en *==main==*. 
+- La rama *dev* se utilizará para mergear las distintas ramas y previsualizar el resultado antes de hacer el deploy en *main*. 
 
-- Cada integrante se creará las respectivas ramas para trabajar en su código, los cuales se mergearan luego en *==dev==*.
+- Cada integrante se creará las respectivas ramas para trabajar en su código, los cuales se mergearan luego en *dev*.
 
 4. Estructura de la pagina:
 
