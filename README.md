@@ -16,7 +16,19 @@
 
 1. Documentación del proyecto. 
 
-Toda la documentación de confección del preoyecto se encuentra alojada en la carpeta: Sunnyside/documentacion/. Alli se encunetran 
+Toda la documentación de confección del preoyecto se encuentra alojada en la carpeta: Sunnyside/documentacion/. Alli se encuentra la guia de estilos y los diseño guia. 
+
+2. Lenguajes
+
+Para la creación se utilizará HTML, Css (pudiendo utilizar un Sass como preprocesador) y Js para la animación del menu desplegable.
+
+3. Ramas de github
+
+- La rama *==main==* se utilizara para publicar el resultado del desarrollo.
+
+- La rama *==dev==* se utilizará para mergear las distintas ramas y previsualizar el resultado antes de hacer el deploy en *==main==*. 
+
+- Cada integrante se creará las respectivas ramas para trabajar en su código, los cuales se mergearan luego en *==dev==*.
 
 
 <!-- 
@@ -130,10 +142,4 @@ That is so funny! :joy:
 
 I need to highlight these ==very important words==.
 
-### Subscript
-
-H~2~O
-
-### Superscript
-
-X^2^ -->
+ -->

@@ -1,0 +1,17 @@
+/* Estilos inciales para la versión preliminar de Main */
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:  hsl(7, 99%, 70%);
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: hsl(51, 100%, 49%);
+}
