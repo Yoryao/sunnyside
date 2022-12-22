@@ -30,6 +30,17 @@ Para la creación se utilizará HTML, Css (pudiendo utilizar un Sass como prepro
 
 - Cada integrante se creará las respectivas ramas para trabajar en su código, los cuales se mergearan luego en *==dev==*.
 
+4. Estructura de la pagina:
+
+- Header formado por un navbar y un hero section.
+- Main formado por:
+  1. un section con 3 articles.
+  2. un section con las cards de opinion.
+  3. un aside con imagenes.
+- Footer.
+
+5. Convencion para las clases y id.
+
 
 <!-- 
 
