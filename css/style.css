@@ -3,7 +3,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   display: flex;
-  border: 1px solid red;
   width: 375px;
 }
 
@@ -52,7 +51,6 @@ nav img {
 }
 
 .splitedCard {
-  border: 1px solid black;
   text-align: center;
 }
 .splitedCard div {
@@ -68,20 +66,65 @@ nav img {
   font-weight: bold;
 }
 
-#cherryCard {
-  height: 667px;
-  background-image: url(../images/mobile/image-graphic-design.jpg);
-  background-size: cover;
+.fullCard {
+  width: 100%;
   text-align: center;
+  height: 630px;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#cherryCard {
+  background-image: url(../images/mobile/image-graphic-design.jpg);
 }
 
 #tangarineCard {
-  text-align: center;
-  height: 667px;
   background-image: url(../images/mobile/image-photography.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+}
+
+#testimonialSection {
+  text-align: center;
+}
+#testimonialSection .testimonialCards {
+  text-align: center;
+}
+#testimonialSection .testimonialCards img {
+  width: 20%;
+  border-radius: 100%;
+}
+
+#imagesAside {
+  flex-wrap: wrap;
+}
+#imagesAside img {
+  width: 50%;
+}
+
+footer {
+  padding-top: 30px;
+  align-items: center;
+  background-color: hsl(168deg, 34%, 41%);
+  text-align: center;
+}
+footer #footerLogo {
+  width: 40%;
+}
+footer .footerLinksContainer {
+  width: 100%;
+  justify-content: space-evenly;
+}
+footer .footerLinksContainer a {
+  padding-top: 30px;
+  text-decoration: none;
+  color: hsl(210deg, 4%, 67%);
+}
+footer .footerIconsContainer {
+  padding: 30px;
+  width: 45%;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */
