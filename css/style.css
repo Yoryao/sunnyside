@@ -22,19 +22,19 @@ body {
 
 header {
   width: 100%;
-  height: 667px;
+  height: 90vh;
   background-image: url(../images/mobile/image-header.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-
-nav {
+header nav {
   height: 7vh;
+  top: 0;
   justify-content: space-between;
   align-items: center;
   padding: 2vh;
 }
-nav img {
+header nav img {
   height: 3vh;
   color: aliceblue;
 }
@@ -50,23 +50,27 @@ nav img {
   color: aliceblue;
 }
 
-.splitedCard {
+#cardContainer {
   text-align: center;
 }
-.splitedCard div {
-  padding: 25px 20px;
+#cardContainer img {
+  width: 100%;
+  height: 40vh;
 }
-.splitedCard div h2 {
+#cardContainer article {
+  padding: 25px 20px;
+  height: 50vh;
+}
+#cardContainer article h2 {
   font-family: "Noto Sans", sans-serif;
   font-size: 2rem;
 }
-.splitedCard div a {
+#cardContainer article a {
   text-decoration: none;
   color: hsl(212deg, 27%, 19%);
   font-weight: bold;
 }
-
-.fullCard {
+#cardContainer .fullCard {
   width: 100%;
   text-align: center;
   height: 100vh;
@@ -76,12 +80,10 @@ nav img {
   align-items: center;
   justify-content: flex-end;
 }
-
-#cherryCard {
+#cardContainer #card5 {
   background-image: url(../images/mobile/image-graphic-design.jpg);
 }
-
-#tangarineCard {
+#cardContainer #card6 {
   background-image: url(../images/mobile/image-photography.jpg);
 }
 
@@ -127,96 +129,130 @@ footer .footerIconsContainer {
   justify-content: space-between;
 }
 
-@media screen and (min-device-width: 992px) {
-  header {
-    height: 100vh;
-    width: 100%;
-    background-image: url(../images/desktop/image-header.jpg);
-    background-size: cover;
-    background-position: bottom;
-  }
-  nav {
-    height: 5vh;
-    padding: 3vh;
-  }
-  #heroContainer h1 {
+/*
+@media screen and ( min-device-width: 992px) {
+
+  // MOBILE DESIGN
+header {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/desktop/image-header.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+nav {
+  height: 5vh;
+  padding: 3vh;
+}
+
+#heroContainer {
+  h1 {
     font-size: 1em;
   }
-  #heroContainer #arrowDownImage {
+  #arrowDownImage {
     height: 35%;
   }
-  .splitedCard {
-    flex-direction: row;
-  }
-  .splitedCard img {
+}
+
+// Splited card Style
+
+
+.splitedCard{
+  flex-direction: row;
+
+  img {
     width: 50%;
   }
-  .splitedCard div {
+
+  div {
     padding: 0;
-  }
-  .splitedCard div h2 {
-    font-family: "Noto Sans", sans-serif;
-    font-size: 3rem;
-  }
-  .fullCardContainer {
-    display: flex;
-    flex-direction: row;
-  }
-  .fullCardContainer .fullCard {
-    width: 50%;
-    height: 80vh;
-    background-size: cover;
-  }
-  .fullCardContainer #cherryCard {
-    background-image: url(../images/desktop/image-graphic-design.jpg);
-  }
-  .fullCardContainer #tangarineCard {
-    background-image: url(../images/desktop/image-photography.jpg);
-  }
-  #testimonialSection .cardContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  #testimonialSection .cardContainer .testimonialCards {
-    justify-content: space-evenly;
-    width: 20%;
-    height: 30vh;
-    padding: 5%;
-  }
-  #testimonialSection .cardContainer .testimonialCards img {
-    width: 30%;
-    border-radius: 100%;
-  }
-  #imagesAside {
-    flex-wrap: wrap;
-  }
-  #imagesAside img {
-    width: 25%;
-  }
-  footer {
-    padding-top: 30px;
-    align-items: center;
-    background-color: hsl(168deg, 34%, 41%);
-    text-align: center;
-  }
-  footer #footerLogo {
-    width: 40%;
-  }
-  footer .footerLinksContainer {
-    width: 100%;
-    justify-content: space-evenly;
-  }
-  footer .footerLinksContainer a {
-    padding-top: 30px;
-    text-decoration: none;
-    color: hsl(210deg, 4%, 67%);
-  }
-  footer .footerIconsContainer {
-    padding: 30px;
-    width: 45%;
-    justify-content: space-between;
+        h2 {
+          font-family: baseStyle.$font-noto;
+          font-size: 3rem;
+        }
   }
 }
+
+
+.fullCardContainer {
+  display: flex;
+  flex-direction: row;
+.fullCard {
+    width: 50%;
+    height: 80vh;
+    background-size:cover;
+
+}
+#cherryCard {
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+}
+
+#tangarineCard {
+    background-image: url(../images/desktop/image-photography.jpg);
+}
+}
+#testimonialSection {
+
+    .cardContainer{
+        display: flex;
+        flex-direction: row ;
+        justify-content:center;
+
+    .testimonialCards {
+        justify-content: space-evenly;
+        width: 20%;
+        height: 30vh;
+        padding: 5%;
+
+        img {
+            width: 30%;
+            border-radius: 100%;
+        }
+
+      }
+    }
+}
+
+
+#imagesAside {
+    flex-wrap: wrap;
+    img {
+        width: 25%;
+    }
+}
+
+footer {
+    padding-top: 30px;
+    align-items: center;
+    background-color: baseStyle.$primary-DarkDarkCyan;
+    text-align: center;
+    #footerLogo {
+        width: 40%;
+    }
+
+    .footerLinksContainer {
+        width: 100%;
+        justify-content: space-evenly;
+        a {
+            padding-top: 30px;
+            text-decoration: none;
+            color: baseStyle.$neutral-GrayishBlue;
+        }
+    }
+    .footerIconsContainer {
+        padding: 30px ;
+        width: 45%;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
+}
+
+*/
 
 /*# sourceMappingURL=style.css.map */
