@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: content-box;
   display: flex;
   width: 100vw;
 }
@@ -69,7 +69,7 @@ header {
     }
 
     article {
-    padding: 25px 20px;
+    padding: 25px 0px;
     height: 50vh;
 
       h2 {
@@ -104,28 +104,6 @@ header {
 }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #testimonialSection {
@@ -178,7 +156,7 @@ footer {
 
 
 /// desktop design
-/*
+
 @media screen and ( min-device-width: 992px) {
 
   // MOBILE DESIGN
@@ -207,40 +185,57 @@ nav {
 // Splited card Style
 
 
-.splitedCard{
+#cardContainer{
   flex-direction: row;
+  flex-wrap: wrap;
 
   img {
     width: 50%;
+    height: 80vh;
   }
-
-  div {
-    padding: 0;
+  
+  .card {
+     padding: 0;
+    width: 50%;
+    height: 80vh;
         h2 {
           font-family: baseStyle.$font-noto;
-          font-size: 3rem;
+          font-size: 2rem;
         }
   }
-}
 
 
-.fullCardContainer {
-  display: flex;
-  flex-direction: row;
+
 .fullCard {
     width: 50%;
     height: 80vh;
     background-size:cover;
     
+  }
+
+  
+#card2 {
+    order: -1;
 }
-#cherryCard {
+  
+#card5 {
     background-image: url(../images/desktop/image-graphic-design.jpg);
 }
 
-#tangarineCard {
+#card6 {
     background-image: url(../images/desktop/image-photography.jpg);
 }
+
 }
+
+
+
+
+
+
+
+
+
 #testimonialSection {
 
     .cardContainer{
@@ -300,6 +295,6 @@ footer {
 
 
   
-}
 
-*/
+
+}

@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: content-box;
   display: flex;
   width: 100vw;
 }
@@ -58,7 +58,7 @@ header nav img {
   height: 40vh;
 }
 #cardContainer article {
-  padding: 25px 20px;
+  padding: 25px 0px;
   height: 50vh;
 }
 #cardContainer article h2 {
@@ -129,130 +129,99 @@ footer .footerIconsContainer {
   justify-content: space-between;
 }
 
-/*
-@media screen and ( min-device-width: 992px) {
-
-  // MOBILE DESIGN
-header {
-  height: 100vh;
-  width: 100%;
-  background-image: url(../images/desktop/image-header.jpg);
-  background-size: cover;
-  background-position: bottom;
-}
-
-nav {
-  height: 5vh;
-  padding: 3vh;
-}
-
-#heroContainer {
-  h1 {
+@media screen and (min-device-width: 992px) {
+  header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: bottom;
+  }
+  nav {
+    height: 5vh;
+    padding: 3vh;
+  }
+  #heroContainer h1 {
     font-size: 1em;
   }
-  #arrowDownImage {
+  #heroContainer #arrowDownImage {
     height: 35%;
   }
-}
-
-// Splited card Style
-
-
-.splitedCard{
-  flex-direction: row;
-
-  img {
-    width: 50%;
+  #cardContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-
-  div {
-    padding: 0;
-        h2 {
-          font-family: baseStyle.$font-noto;
-          font-size: 3rem;
-        }
-  }
-}
-
-
-.fullCardContainer {
-  display: flex;
-  flex-direction: row;
-.fullCard {
+  #cardContainer img {
     width: 50%;
     height: 80vh;
-    background-size:cover;
-
-}
-#cherryCard {
+  }
+  #cardContainer .card {
+    padding: 0;
+    width: 50%;
+    height: 80vh;
+  }
+  #cardContainer .card h2 {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 2rem;
+  }
+  #cardContainer .fullCard {
+    width: 50%;
+    height: 80vh;
+    background-size: cover;
+  }
+  #cardContainer #card2 {
+    order: -1;
+  }
+  #cardContainer #card5 {
     background-image: url(../images/desktop/image-graphic-design.jpg);
-}
-
-#tangarineCard {
+  }
+  #cardContainer #card6 {
     background-image: url(../images/desktop/image-photography.jpg);
-}
-}
-#testimonialSection {
-
-    .cardContainer{
-        display: flex;
-        flex-direction: row ;
-        justify-content:center;
-
-    .testimonialCards {
-        justify-content: space-evenly;
-        width: 20%;
-        height: 30vh;
-        padding: 5%;
-
-        img {
-            width: 30%;
-            border-radius: 100%;
-        }
-
-      }
-    }
-}
-
-
-#imagesAside {
+  }
+  #testimonialSection .cardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #testimonialSection .cardContainer .testimonialCards {
+    justify-content: space-evenly;
+    width: 20%;
+    height: 30vh;
+    padding: 5%;
+  }
+  #testimonialSection .cardContainer .testimonialCards img {
+    width: 30%;
+    border-radius: 100%;
+  }
+  #imagesAside {
     flex-wrap: wrap;
-    img {
-        width: 25%;
-    }
-}
-
-footer {
+  }
+  #imagesAside img {
+    width: 25%;
+  }
+  footer {
     padding-top: 30px;
     align-items: center;
-    background-color: baseStyle.$primary-DarkDarkCyan;
+    background-color: hsl(168deg, 34%, 41%);
     text-align: center;
-    #footerLogo {
-        width: 40%;
-    }
-
-    .footerLinksContainer {
-        width: 100%;
-        justify-content: space-evenly;
-        a {
-            padding-top: 30px;
-            text-decoration: none;
-            color: baseStyle.$neutral-GrayishBlue;
-        }
-    }
-    .footerIconsContainer {
-        padding: 30px ;
-        width: 45%;
-        justify-content: space-between;
-    }
+  }
+  footer #footerLogo {
+    width: 40%;
+  }
+  footer .footerLinksContainer {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  footer .footerLinksContainer a {
+    padding-top: 30px;
+    text-decoration: none;
+    color: hsl(210deg, 4%, 67%);
+  }
+  footer .footerIconsContainer {
+    padding: 30px;
+    width: 45%;
+    justify-content: space-between;
+  }
 }
-
-
-
-
-
-}
-
-*/
 
 /*# sourceMappingURL=style.css.map */
