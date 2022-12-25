@@ -153,6 +153,40 @@ footer {
     }
 }
     
+@media screen and (orientatio: landscape) {
+ 
+  #cardContainer{
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  img {
+    width: 50%;
+    height: 90vh;
+  }
+  
+  .card {
+    padding: 0;
+    width: 50%;
+    height: 90vh;
+        h2 {
+          font-family: baseStyle.$font-noto;
+          font-size: 2rem;
+        }
+  }
+
+
+
+.fullCard {
+    width: 50%;
+    height: 80vh;
+    background-size:cover;
+    
+  }
+  
+  
+  
+}
+
 
 
 /// desktop design
