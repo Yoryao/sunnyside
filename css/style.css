@@ -129,7 +129,7 @@ footer .footerIconsContainer {
   justify-content: space-between;
 }
 
-@media screen and (orientatio: landscape) {
+@media screen and (orientation: landscape) and (min-width: 376px) and (max-width: 991px) {
   #cardContainer {
     flex-direction: row;
     flex-wrap: wrap;
@@ -147,10 +147,13 @@ footer .footerIconsContainer {
     font-family: "Noto Sans", sans-serif;
     font-size: 2rem;
   }
-  #cardContainer .fullCard {
+  #cardContainer fullCard {
     width: 50%;
     height: 80vh;
     background-size: cover;
+  }
+  #cardContainer #card2 {
+    order: -1;
   }
 }
 @media screen and (min-device-width: 992px) {

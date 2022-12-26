@@ -153,39 +153,45 @@ footer {
     }
 }
     
-@media screen and (orientatio: landscape) {
+@media screen and (orientation: landscape) and (min-width: 376px) and (max-width: 991px)  {
  
-  #cardContainer{
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  img {
-    width: 50%;
-    height: 90vh;
-  }
-  
-  .card {
-    padding: 0;
-    width: 50%;
-    height: 90vh;
-        h2 {
-          font-family: baseStyle.$font-noto;
-          font-size: 2rem;
-        }
-  }
-  
-
-
-.fullCard {
-    width: 50%;
-    height: 80vh;
-    background-size:cover;
+    #cardContainer{
+    flex-direction: row;
+    flex-wrap: wrap;
     
+        img {
+          width: 50%;
+          height: 90vh;
+        }
+    
+        
+
+        .card {
+          padding: 0;
+          width: 50%;
+          height: 90vh;
+              h2 {
+                font-family: baseStyle.$font-noto;
+                font-size: 2rem;
+              }
+        }
+    
+        fullCard {
+            width: 50%;
+            height: 80vh;
+            background-size:cover;
+        }
+
+        #card2 {
+          order: -1;
+        }
+
+
+
+    }
+
+
   }
-  
-}
-  
-}
 
 
 
@@ -237,28 +243,22 @@ nav {
           font-size: 2rem;
         }
   }
-
-
-
-.fullCard {
+  .fullCard {
     width: 50%;
     height: 80vh;
     background-size:cover;
-    
   }
 
   
-#card2 {
-    order: -1;
-}
-  
-#card5 {
-    background-image: url(../images/desktop/image-graphic-design.jpg);
-}
-
-#card6 {
-    background-image: url(../images/desktop/image-photography.jpg);
-}
+  #card2 {
+      order: -1;
+  }
+  #card5 {
+      background-image: url(../images/desktop/image-graphic-design.jpg);
+  }
+  #card6 {
+      background-image: url(../images/desktop/image-photography.jpg);
+  }
 
 }
 
