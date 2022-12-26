@@ -129,6 +129,30 @@ footer .footerIconsContainer {
   justify-content: space-between;
 }
 
+@media screen and (orientatio: landscape) {
+  #cardContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #cardContainer img {
+    width: 50%;
+    height: 90vh;
+  }
+  #cardContainer .card {
+    padding: 0;
+    width: 50%;
+    height: 90vh;
+  }
+  #cardContainer .card h2 {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 2rem;
+  }
+  #cardContainer .fullCard {
+    width: 50%;
+    height: 80vh;
+    background-size: cover;
+  }
+}
 @media screen and (min-device-width: 992px) {
   header {
     height: 100vh;
