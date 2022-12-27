@@ -7,8 +7,8 @@
 
 | Nombre    | Funcion               | Mail             | Github     |
 | --------- | --------------------- | ---------------- | ---------- |
-| Maria Brun Lubatti     | Desarrollo desktop    | mariabrunlubatti@gmail.com | /Usuario   |
-| Jorge Rivera      | Lider de equipo    | jorgejoaquinrivera@gmail.com | /Yoryao   |
+| Maria Brun Lubatti     | Desarrollo desktop    | mariabrunlubatti@gmail.com | [/brunmaria](https://github.com/brunmaria)   |
+| Jorge Rivera      | Lider de equipo    | jorgejoaquinrivera@gmail.com | [/Yoryao](https://github.com/yoryao)  |
 | #3        | Desarrollo desktop    | prueba@gmail.com | /Usuario   |
 | #4        | Desarrollo desktop    | prueba@gmail.com | /Usuario   |
 
@@ -145,6 +145,8 @@ term
 
 ### Emoji
 
+
+(See also )
 That is so funny! :joy:
 
 (See also [Copying and Pasting Emoji](https://www.markdownguide.org/extended-syntax/#copying-and-pasting-emoji))
