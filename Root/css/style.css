@@ -1,0 +1,45 @@
+/* Estilos inciales para la versión preliminar de Main */
+
+* {
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: hsl(204, 100%, 71%);
+  justify-content: center;
+  
+}
+
+.flex {
+  display: flex;
+}
+
+/*MENU*/
+header {
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Barlow', sans-serif;
+}
+.menu1 {
+  padding: 20px;
+  list-style: none;
+}
+.menu {
+  text-decoration: none;
+  justify-content: space-around;
+  padding: 20px;
+  color: white;
+}
+
+/*PRINCIPAL FRONT*/
+h1 {
+  font-size: 3rem;
+  color: hsl(51, 100%, 49%);
+  font-family: 'Fraunces', serif;
+}
+
+.principal-front {
+  background-image: url(../images/desktop/image-header.jpg);  
+  width: 100%;
+}
