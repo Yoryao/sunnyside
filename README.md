@@ -7,8 +7,8 @@
 
 | Nombre    | Funcion               | Mail             | Github     |
 | --------- | --------------------- | ---------------- | ---------- |
-| #1        | Desarrollo desktop    | prueba@gmail.com | /Usuario   |
-| #2        | Desarrollo desktop    | prueba@gmail.com | /Usuario   |
+| Maria Brun Lubatti     | Desarrollo desktop    | mariabrunlubatti@gmail.com | /Usuario   |
+| Jorge Rivera      | Lider de equipo    | jorgejoaquinrivera@gmail.com | /Yoryao   |
 | #3        | Desarrollo desktop    | prueba@gmail.com | /Usuario   |
 | #4        | Desarrollo desktop    | prueba@gmail.com | /Usuario   |
 
