@@ -24,6 +24,7 @@ body {
   flex-direction: row;
 }
 
+
 // Mobile design
 header {
   width: 100%;
@@ -43,6 +44,11 @@ header {
           height: 3vh;
           color: aliceblue;
         }
+
+        #navbarLinks {
+          display: none;
+        }
+
       }
 }
 
@@ -82,6 +88,11 @@ header {
         color: baseStyle.$neutral-VeryDarkBlue;
         font-weight: bold;
       }
+.learnBtn:hover{      
+      text-decoration:underline;
+      text-decoration-color: red;
+      text-decoration-thickness: 10%;
+}
   }
 
   .fullCard {
@@ -155,6 +166,29 @@ footer {
     
 @media screen and (orientation: landscape) and (min-width: 376px) and (max-width: 991px)  {
  
+  #navbarLinks {
+    display: none;
+       
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     #cardContainer{
     flex-direction: row;
     flex-wrap: wrap;
@@ -199,19 +233,62 @@ footer {
 
 @media screen and ( min-device-width: 992px) {
 
-  // MOBILE DESIGN
+ 
 header {
   height: 100vh;
   width: 100%;
   background-image: url(../images/desktop/image-header.jpg);
   background-size: cover;
   background-position: bottom;
-}
+
 
 nav {
   height: 5vh;
   padding: 3vh;
+
+#menuImage {
+  display: none;
 }
+
+#navbarLinks {
+  display:initial;
+  flex-direction: row;
+  padding-right: 20px;
+  align-items: center;
+
+
+
+
+  a {
+    text-decoration: none;
+    padding-left: 30px;
+  }
+  
+  #contactButton {
+      margin-left: 30px;
+      width: 50px;
+      border-radius: 50px;
+      padding: 5px;
+
+      &:hover {
+      background-color: red;
+    }}
+  }    
+    
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 #heroContainer {
   h1 {

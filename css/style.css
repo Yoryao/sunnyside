@@ -38,6 +38,9 @@ header nav img {
   height: 3vh;
   color: aliceblue;
 }
+header nav #navbarLinks {
+  display: none;
+}
 
 #heroContainer {
   text-align: center;
@@ -69,6 +72,11 @@ header nav img {
   text-decoration: none;
   color: hsl(212deg, 27%, 19%);
   font-weight: bold;
+}
+#cardContainer article .learnBtn:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-thickness: 10%;
 }
 #cardContainer .fullCard {
   width: 100%;
@@ -130,6 +138,9 @@ footer .footerIconsContainer {
 }
 
 @media screen and (orientation: landscape) and (min-width: 376px) and (max-width: 991px) {
+  #navbarLinks {
+    display: none;
+  }
   #cardContainer {
     flex-direction: row;
     flex-wrap: wrap;
@@ -164,9 +175,31 @@ footer .footerIconsContainer {
     background-size: cover;
     background-position: bottom;
   }
-  nav {
+  header nav {
     height: 5vh;
     padding: 3vh;
+  }
+  header nav #menuImage {
+    display: none;
+  }
+  header nav #navbarLinks {
+    display: initial;
+    flex-direction: row;
+    padding-right: 20px;
+    align-items: center;
+  }
+  header nav #navbarLinks a {
+    text-decoration: none;
+    padding-left: 30px;
+  }
+  header nav #navbarLinks #contactButton {
+    margin-left: 30px;
+    width: 50px;
+    border-radius: 50px;
+    padding: 5px;
+  }
+  header nav #navbarLinks #contactButton:hover {
+    background-color: red;
   }
   #heroContainer h1 {
     font-size: 1em;
