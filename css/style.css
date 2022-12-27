@@ -22,7 +22,7 @@ body {
 
 header {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-image: url(../images/mobile/image-header.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -32,25 +32,26 @@ header nav {
   top: 0;
   justify-content: space-between;
   align-items: center;
-  padding: 2vh;
+  padding: 2vh 3vh;
 }
 header nav img {
-  height: 3vh;
-  color: aliceblue;
+  height: 4vh;
 }
 header nav #navbarLinks {
   display: none;
 }
-
-#heroContainer {
+header #heroContainer {
   text-align: center;
 }
-#heroContainer h1 {
+header #heroContainer h1 {
   font-family: "Noto Sans", sans-serif;
   font-size: 3em;
   font-weight: 900;
   text-align: center;
   color: aliceblue;
+}
+header #heroContainer #arrowDownImage {
+  height: 70%;
 }
 
 #cardContainer {
@@ -135,153 +136,6 @@ footer .footerIconsContainer {
   padding: 30px;
   width: 45%;
   justify-content: space-between;
-}
-
-@media screen and (orientation: landscape) and (min-width: 376px) and (max-width: 991px) {
-  #navbarLinks {
-    display: none;
-  }
-  #cardContainer {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  #cardContainer img {
-    width: 50%;
-    height: 90vh;
-  }
-  #cardContainer .card {
-    padding: 0;
-    width: 50%;
-    height: 90vh;
-  }
-  #cardContainer .card h2 {
-    font-family: "Noto Sans", sans-serif;
-    font-size: 2rem;
-  }
-  #cardContainer fullCard {
-    width: 50%;
-    height: 80vh;
-    background-size: cover;
-  }
-  #cardContainer #card2 {
-    order: -1;
-  }
-}
-@media screen and (min-device-width: 992px) {
-  header {
-    height: 100vh;
-    width: 100%;
-    background-image: url(../images/desktop/image-header.jpg);
-    background-size: cover;
-    background-position: bottom;
-  }
-  header nav {
-    height: 5vh;
-    padding: 3vh;
-  }
-  header nav #menuImage {
-    display: none;
-  }
-  header nav #navbarLinks {
-    display: initial;
-    flex-direction: row;
-    padding-right: 20px;
-    align-items: center;
-  }
-  header nav #navbarLinks a {
-    text-decoration: none;
-    padding-left: 30px;
-  }
-  header nav #navbarLinks #contactButton {
-    margin-left: 30px;
-    width: 50px;
-    border-radius: 50px;
-    padding: 5px;
-  }
-  header nav #navbarLinks #contactButton:hover {
-    background-color: red;
-  }
-  #heroContainer h1 {
-    font-size: 1em;
-  }
-  #heroContainer #arrowDownImage {
-    height: 35%;
-  }
-  #cardContainer {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  #cardContainer img {
-    width: 50%;
-    height: 80vh;
-  }
-  #cardContainer .card {
-    padding: 0;
-    width: 50%;
-    height: 80vh;
-  }
-  #cardContainer .card h2 {
-    font-family: "Noto Sans", sans-serif;
-    font-size: 2rem;
-  }
-  #cardContainer .fullCard {
-    width: 50%;
-    height: 80vh;
-    background-size: cover;
-  }
-  #cardContainer #card2 {
-    order: -1;
-  }
-  #cardContainer #card5 {
-    background-image: url(../images/desktop/image-graphic-design.jpg);
-  }
-  #cardContainer #card6 {
-    background-image: url(../images/desktop/image-photography.jpg);
-  }
-  #testimonialSection .cardContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  #testimonialSection .cardContainer .testimonialCards {
-    justify-content: space-evenly;
-    width: 20%;
-    height: 30vh;
-    padding: 5%;
-  }
-  #testimonialSection .cardContainer .testimonialCards img {
-    width: 30%;
-    border-radius: 100%;
-  }
-  #imagesAside {
-    flex-wrap: wrap;
-  }
-  #imagesAside img {
-    width: 25%;
-  }
-  footer {
-    padding-top: 30px;
-    align-items: center;
-    background-color: hsl(168deg, 34%, 41%);
-    text-align: center;
-  }
-  footer #footerLogo {
-    width: 40%;
-  }
-  footer .footerLinksContainer {
-    width: 100%;
-    justify-content: space-evenly;
-  }
-  footer .footerLinksContainer a {
-    padding-top: 30px;
-    text-decoration: none;
-    color: hsl(210deg, 4%, 67%);
-  }
-  footer .footerIconsContainer {
-    padding: 30px;
-    width: 45%;
-    justify-content: space-between;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
