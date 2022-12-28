@@ -38,15 +38,22 @@ header {
   color: white;
 }
 
+a:hover {
+  background-color: rgba(158, 196, 196, 0.564);
+  border-radius: 30px;
+  padding: 15px;
+}
+
 /*PRINCIPAL FRONT*/
 h1 {
   font-size: 3rem;
   color: hsl(51, 100%, 49%);
   font-family: 'Fraunces', serif;
   align-items: center;
-  display: flex;
-}
+  }
 
 .flecha {
-  justify-content: flex-end;
+ padding-top: 40px;
+ 
+ 
 }
