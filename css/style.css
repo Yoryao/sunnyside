@@ -167,7 +167,6 @@ footer .footerIconsContainer {
   #cardContainer {
     flex-direction: row;
     flex-wrap: wrap;
-    height: 75vh;
   }
   #cardContainer img {
     width: 50%;
