@@ -57,3 +57,18 @@ h1 {
  
  
 }
+
+/* Estilo del Aside creado por Jorge */
+
+
+
+#imagesAside {
+  display: flex;
+  width: 100%;
+  flex-wrap:wrap;
+}
+#imagesAside img {
+  padding: 0;
+  margin: 0;
+  width: 25%;
+}
