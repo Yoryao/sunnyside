@@ -54,6 +54,7 @@ header {
           div 
            {
             position: absolute;
+            z-index: 10;
             justify-content: space-evenly;
             top: 0;
             margin: 20% 20% 5%;
@@ -67,9 +68,9 @@ header {
                 // transform: rotate(1deg);
                 margin: 0;
                 position: absolute;
+                z-index: -1;
                 width: 15%;
                 height: 15%;
-                z-index: 100;
                 background-color: azure;
                 top: 0px;
                 right: 0px;
@@ -229,12 +230,14 @@ footer {
             justify-content: space-between;
         }
 }
-    
+  
 @media screen and (min-width: 960px)  {
 
     #menuImage {
       display: none;
     }
+
+
 
     header {
       background-image: url(../images/desktop/image-header.jpg);
@@ -244,23 +247,30 @@ footer {
   
     
         #navbarLinks {
-            display: block;
+            width: 25%;  
+          display: inline-flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: transparent;
+            position: unset;
+            margin: 0;
+            padding: 0;
+            padding-right: 5%;
             flex-direction: row;
-            justify-content: end;
-            width: 40%;
+
             a {
-              font-size: 1.2rem;
-              text-decoration: none;
-              padding-left: 5%;
+              display: inline;
+              padding-left: 7%;
             }
 
             #contactButton {
-              width: 25%;
-              padding: 2%;
-              margin: 2%;
-              border-radius: 100px;
-              align-content: center;
-            }      
+              margin: 0;
+              
+            }
+
+            #triangle {
+              display: none;
+            }
         }
     }
 }
