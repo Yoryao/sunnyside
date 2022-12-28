@@ -1,4 +1,4 @@
-// console.log("app.js connected");
+ console.log("app.js connected");
 
 
 let contactBtn = document.getElementById("contactButton");
@@ -22,6 +22,19 @@ function transparente(){
 
 
 
+let mobileMenuBtn = document.getElementById("menuImage");
+
+mobileMenuBtn.addEventListener("click", showMenu);
+
+
+
+
+
+function showMenu() {
+    let mobileMenu = document.getElementById("navbarLinks");
+    mobileMenu.classList.toggle("oculto");
+    console.log("deja de procastinar!")
+  }
 
 
 
@@ -33,27 +46,3 @@ function transparente(){
 
 
 
-
-
-
-
-
-
-
-
-// let mainTitle = document.getElementById("mainTitle");
-
-
-
-// mainTitle.addEventListener("mouseover", rojo);
-// mainTitle.addEventListener("mouseout", verde);
-
-
-
-
-// function verde() {
-//   mainTitle.style.color = "green";
-// }
-// function rojo() {
-//   mainTitle.style.color = "red";
-// }

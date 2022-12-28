@@ -20,11 +20,15 @@ body {
   flex-direction: row;
 }
 
+.oculto {
+  display: none;
+}
+
 header {
   width: 100%;
   height: 100vh;
   background-image: url(../images/mobile/image-header.jpg);
-  background-size: 100% 100%;
+  background-size: 100% 100vh;
   background-repeat: no-repeat;
 }
 header nav {
@@ -37,8 +41,36 @@ header nav {
 header nav img {
   height: 4vh;
 }
-header nav #navbarLinks {
-  display: none;
+header nav div {
+  position: absolute;
+  justify-content: space-evenly;
+  top: 0;
+  margin: 20% 20% 5%;
+  width: 70%;
+  height: 40%;
+  background-color: azure;
+  text-align: center;
+}
+header nav div #triangle {
+  transform: skewY(-45deg);
+  margin: 0;
+  position: absolute;
+  width: 15%;
+  height: 15%;
+  z-index: 100;
+  background-color: azure;
+  top: 0px;
+  right: 0px;
+}
+header nav div a {
+  text-decoration: none;
+}
+header nav div #contactButton {
+  width: 25%;
+  padding: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100px;
 }
 header #heroContainer {
   text-align: center;
@@ -76,8 +108,8 @@ header #heroContainer #arrowDownImage {
 }
 #cardContainer article .learnBtn:hover {
   text-decoration: underline;
-  text-decoration-color: red;
-  text-decoration-thickness: 10%;
+  text-shadow: 2px;
+  text-decoration-thickness: 3px;
 }
 #cardContainer .fullCard {
   width: 100%;
@@ -88,6 +120,12 @@ header #heroContainer #arrowDownImage {
   background-position: center;
   align-items: center;
   justify-content: flex-end;
+}
+#cardContainer #card2 .learnBtn:hover {
+  text-decoration-color: yellow;
+}
+#cardContainer #card4 .learnBtn:hover {
+  text-decoration-color: orange;
 }
 #cardContainer #card5 {
   background-image: url(../images/mobile/image-graphic-design.jpg);
@@ -146,6 +184,10 @@ footer .footerIconsContainer {
   #menuImage {
     display: none;
   }
+  header {
+    background-image: url(../images/desktop/image-header.jpg);
+    background-size: 100% 100vh;
+  }
   header nav #navbarLinks {
     display: block;
     flex-direction: row;
@@ -192,10 +234,17 @@ footer .footerIconsContainer {
   #cardContainer .fullCard p {
     width: 80%;
   }
+  #cardContainer #card5 {
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+  }
+  #cardContainer #card6 {
+    background-image: url(../images/desktop/image-photography.jpg);
+  }
   #testimonialSection {
     text-align: center;
     display: flex;
     flex-direction: column;
+    height: 100vh;
   }
   #testimonialSection .testimonialContainer {
     display: flex;

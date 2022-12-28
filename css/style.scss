@@ -24,6 +24,12 @@ body {
   flex-direction: row;
 }
 
+.oculto {
+  display: none;
+}
+
+
+
 // Mobile design
 
 //header and navbar
@@ -31,7 +37,7 @@ header {
     width: 100%;
     height: 100vh;
     background-image: url(../images/mobile/image-header.jpg);
-    background-size: 100% 100%;
+    background-size: 100% 100vh;
     background-repeat: no-repeat;
 
         nav {
@@ -45,8 +51,48 @@ header {
             height: 4vh;
           }
 
-          #navbarLinks {
-            display: none;
+          div 
+           {
+            position: absolute;
+            justify-content: space-evenly;
+            top: 0;
+            margin: 20% 20% 5%;
+            width: 70%;
+            height: 40%;
+            background-color: azure;
+            text-align: center;
+
+              #triangle {
+                transform: skewY(-45deg);
+                // transform: rotate(1deg);
+                margin: 0;
+                position: absolute;
+                width: 15%;
+                height: 15%;
+                z-index: 100;
+                background-color: azure;
+                top: 0px;
+                right: 0px;
+             }
+
+
+
+
+              a {
+                text-decoration: none;
+                // height: 25%;
+              }
+
+              #contactButton {
+                width: 25%;
+                padding: 3%;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 100px;
+              }    
+
+
+
           }
         }
 
@@ -92,8 +138,8 @@ header {
             }
             .learnBtn:hover{      
                 text-decoration:underline;
-                text-decoration-color: red;
-                text-decoration-thickness: 10%;
+                text-shadow: 2px;
+                text-decoration-thickness: 3px;
             }
         }
 
@@ -107,6 +153,19 @@ header {
             align-items: center;
             justify-content: flex-end;
         }
+
+        #card2 {
+          .learnBtn:hover{
+          text-decoration-color: yellow;    
+          }
+         }
+
+        #card4 {  
+          .learnBtn:hover{
+          text-decoration-color: orange;    
+          }
+        }
+
 
         #card5 {
             background-image: url(../images/mobile/image-graphic-design.jpg);
@@ -178,7 +237,9 @@ footer {
     }
 
     header {
-  
+      background-image: url(../images/desktop/image-header.jpg);
+      background-size: 100% 100vh;
+
       nav {
   
     
@@ -238,13 +299,20 @@ footer {
                 }
         }
 
+        #card5 {
+          background-image: url(../images/desktop/image-graphic-design.jpg);
       }
+
+      #card6 {
+          background-image: url(../images/desktop/image-photography.jpg);
+      }     }
 
 
       #testimonialSection {
           text-align: center;
           display:flex;
           flex-direction: column;
+          height: 100vh;
 
               .testimonialContainer {
                   display: flex;
@@ -275,179 +343,4 @@ footer {
 
 }
 
-
-
-
-
-// /// desktop design
-
-// @media screen and ( min-device-width: 992px) {
-
  
-// header {
-//   height: 100vh;
-//   width: 100%;
-//   background-image: url(../images/desktop/image-header.jpg);
-//   background-size: cover;
-//   background-position: bottom;
-
-
-// nav {
-//   height: 5vh;
-//   padding: 3vh;
-
-// #menuImage {
-//   display: none;
-// }
-
-// #navbarLinks {
-//   display:initial;
-//   flex-direction: row;
-//   padding-right: 20px;
-//   align-items: center;
-
-
-
-
-//   a {
-//     text-decoration: none;
-//     padding-left: 30px;
-//   }
-  
-//   #contactButton {
-//       margin-left: 30px;
-//       width: 50px;
-//       border-radius: 50px;
-//       padding: 5px;
-
-//       &:hover {
-//       background-color: red;
-//     }}
-//   }    
-    
-// }
-
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-// #heroContainer {
-//   h1 {
-//     font-size: 1em;
-//   }
-//   #arrowDownImage {
-//     height: 35%;
-//   }
-// }
-
-// // Splited card Style
-
-
-// #cardContainer{
-//   flex-direction: row;
-//   flex-wrap: wrap;
-
-//   img {
-//     width: 50%;
-//     height: 80vh;
-//   }
-  
-//   .card {
-//      padding: 0;
-//     width: 50%;
-//     height: 80vh;
-//         h2 {
-//           font-family: baseStyle.$font-noto;
-//           font-size: 2rem;
-//         }
-//   }
-//   .fullCard {
-//     width: 50%;
-//     height: 80vh;
-//     background-size:cover;
-//   }
-
-  
-//   #card2 {
-//       order: -1;
-//   }
-//   #card5 {
-//       background-image: url(../images/desktop/image-graphic-design.jpg);
-//   }
-//   #card6 {
-//       background-image: url(../images/desktop/image-photography.jpg);
-//   }
-
-// }
-
-
-
-
-
-
-
-
-
-// #testimonialSection {
-
-//     .cardContainer{
-//         display: flex;
-//         flex-direction: row ;
-//         justify-content:center;
-    
-//     .testimonialCards {
-//         justify-content: space-evenly;
-//         width: 20%;
-//         height: 30vh;
-//         padding: 5%;
-
-//         img {
-//             width: 30%;
-//             border-radius: 100%;
-//         }
-      
-//       }
-//     }
-// }
-
-
-// #imagesAside {
-//     flex-wrap: wrap;
-//     img {
-//         width: 25%;
-//     }
-// }
-
-// footer {
-//     padding-top: 30px;
-//     align-items: center;
-//     background-color: baseStyle.$primary-DarkDarkCyan;
-//     text-align: center;
-//     #footerLogo {
-//         width: 40%;
-//     }
-
-//     .footerLinksContainer {
-//         width: 100%;
-//         justify-content: space-evenly;
-//         a {
-//             padding-top: 30px;
-//             text-decoration: none;
-//             color: baseStyle.$neutral-GrayishBlue;
-//         }
-//     }
-//     .footerIconsContainer {
-//         padding: 30px ;
-//         width: 45%;
-//         justify-content: space-between;
-//     }
-// }
