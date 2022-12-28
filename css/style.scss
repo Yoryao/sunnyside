@@ -65,73 +65,77 @@ header {
               }
         }
 }
+
 // Splited card Style
 
 #cardContainer {
-  text-align: center;
- 
-    img {
-      width: 100%;
-      height: 40vh;
-    }
-
-    article {
-    padding: 25px 0px;
-    height: 50vh;
-
-      h2 {
-        font-family: baseStyle.$font-noto;
-        font-size: 2rem;
-      }
-
-      a {
-        text-decoration: none;
-        color: baseStyle.$neutral-VeryDarkBlue;
-        font-weight: bold;
-      }
-.learnBtn:hover{      
-      text-decoration:underline;
-      text-decoration-color: red;
-      text-decoration-thickness: 10%;
-}
-  }
-
-  .fullCard {
-    width: 100%;
     text-align: center;
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    align-items: center;
-    justify-content: flex-end;
+ 
+        img {
+            width: 100%;
+            height: 40vh;
+        }
+      
+        article {
+            padding: 25px 0px;
+            height: 60vh;
+        
+            h2 {
+                font-family: baseStyle.$font-noto;
+                font-size: 2rem;
+            }
+        
+            a {
+                text-decoration: none;
+                color: baseStyle.$neutral-VeryDarkBlue;
+                font-weight: bold;
+            }
+            .learnBtn:hover{      
+                text-decoration:underline;
+                text-decoration-color: red;
+                text-decoration-thickness: 10%;
+            }
+        }
 
-}
-#card5 {
-    background-image: url(../images/mobile/image-graphic-design.jpg);
-}
+        .fullCard {
+            width: 100%;
+            text-align: center;
+            height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            align-items: center;
+            justify-content: flex-end;
+        }
 
-#card6 {
-    background-image: url(../images/mobile/image-photography.jpg);
-}
+        #card5 {
+            background-image: url(../images/mobile/image-graphic-design.jpg);
+        }
 
+        #card6 {
+            background-image: url(../images/mobile/image-photography.jpg);
+        }
 }
 
 
 #testimonialSection {
     text-align: center;
 
-.testimonialCards {
-    text-align: center;
+    .testimonialCards {
+        text-align: center;
+       
+        img {
+            padding-top: 5%;
+            width: 20%;
+            border-radius: 100%;
+        }
 
-
-
-    img {
-        width: 20%;
-        border-radius: 100%;
+        p {
+          padding: 0% 10% 0% 10%;
+        }
+      
     }
-
-}}
+  }
 
 #imagesAside {
     flex-wrap: wrap;
@@ -145,88 +149,134 @@ footer {
     align-items: center;
     background-color: baseStyle.$primary-DarkDarkCyan;
     text-align: center;
-    #footerLogo {
-        width: 40%;
-    }
-
-    .footerLinksContainer {
-        width: 100%;
-        justify-content: space-evenly;
-        a {
-            padding-top: 30px;
-            text-decoration: none;
-            color: baseStyle.$neutral-GrayishBlue;
+        
+        #footerLogo {
+            width: 40%;
+          }
+          
+        .footerLinksContainer {
+            width: 100%;
+            justify-content: space-evenly;
+                a {
+                    padding-top: 30px;
+                    text-decoration: none;
+                    color: baseStyle.$neutral-GrayishBlue;
+                }
         }
-    }
-    .footerIconsContainer {
-        padding: 30px ;
-        width: 45%;
-        justify-content: space-between;
-    }
+        
+        .footerIconsContainer {
+            padding: 30px ;
+            width: 45%;
+            justify-content: space-between;
+        }
 }
     
-// @media screen and (min-width: 376px) and (max-width: 991px)  {
- 
-//   #navbarLinks {
-//     display: none;
-       
-//   }
+@media screen and (min-width: 960px)  {
 
+    #menuImage {
+      display: none;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//     #cardContainer{
-//     flex-direction: row;
-//     flex-wrap: wrap;
+    header {
+  
+      nav {
+  
     
-//         img {
-//           width: 50%;
-//           height: 90vh;
-//         }
+        #navbarLinks {
+            display: block;
+            flex-direction: row;
+            justify-content: end;
+            width: 40%;
+            a {
+              font-size: 1.2rem;
+              text-decoration: none;
+              padding-left: 5%;
+            }
+
+            #contactButton {
+              width: 25%;
+              padding: 2%;
+              margin: 2%;
+              border-radius: 100px;
+              align-content: center;
+            }      
+        }
+    }
+}
+
+    #cardContainer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 75vh;
+
+            img {
+              width: 50%;
+              height: 75vh;
+            }
+          
+        .card {
+          padding: 0;
+          width: 50%;
+          height: 75vh;
+              h2 {
+                font-family: baseStyle.$font-noto;
+                font-size: 2rem;
+              }
+        }
     
-        
-
-//         .card {
-//           padding: 0;
-//           width: 50%;
-//           height: 90vh;
-//               h2 {
-//                 font-family: baseStyle.$font-noto;
-//                 font-size: 2rem;
-//               }
-//         }
-    
-//         fullCard {
-//             width: 50%;
-//             height: 80vh;
-//             background-size:cover;
-//         }
-
-//         #card2 {
-//           order: -1;
-//         }
+        #card2 {
+            order: -1;
+        }
 
 
+        .fullCard {
+            width: 50%;
+            height: 75vh;
+            background-size:cover;
+                p {
+                  width: 80%;
+                }
+        }
 
-//     }
+      }
 
 
-//   }
+      #testimonialSection {
+          text-align: center;
+          display:flex;
+          flex-direction: column;
+
+              .testimonialContainer {
+                  display: flex;
+                  flex-direction: row;
+            
+                  .testimonialCards {
+                      text-align: center;
+
+                      img {
+                          padding-top: 5%;
+                          width: 20%;
+                          border-radius: 100%;
+                      }
+                    
+                      p {
+                        padding: 0% 10% 0% 10%;
+                      }
+                  }
+              }
+      }
+
+    #imagesAside {
+        flex-wrap: wrap;
+        img {
+            width: 25%;
+        }
+    }
+
+
+    }
+
+
 
 
 
@@ -401,8 +451,4 @@ footer {
 //         width: 45%;
 //         justify-content: space-between;
 //     }
-// }
-    
-
-  
 // }

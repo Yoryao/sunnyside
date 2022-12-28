@@ -63,7 +63,7 @@ header #heroContainer #arrowDownImage {
 }
 #cardContainer article {
   padding: 25px 0px;
-  height: 50vh;
+  height: 60vh;
 }
 #cardContainer article h2 {
   font-family: "Noto Sans", sans-serif;
@@ -103,8 +103,12 @@ header #heroContainer #arrowDownImage {
   text-align: center;
 }
 #testimonialSection .testimonialCards img {
+  padding-top: 5%;
   width: 20%;
   border-radius: 100%;
+}
+#testimonialSection .testimonialCards p {
+  padding: 0% 10% 0% 10%;
 }
 
 #imagesAside {
@@ -136,6 +140,85 @@ footer .footerIconsContainer {
   padding: 30px;
   width: 45%;
   justify-content: space-between;
+}
+
+@media screen and (min-width: 960px) {
+  #menuImage {
+    display: none;
+  }
+  header nav #navbarLinks {
+    display: block;
+    flex-direction: row;
+    justify-content: end;
+    width: 40%;
+  }
+  header nav #navbarLinks a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding-left: 5%;
+  }
+  header nav #navbarLinks #contactButton {
+    width: 25%;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 100px;
+    align-content: center;
+  }
+  #cardContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 75vh;
+  }
+  #cardContainer img {
+    width: 50%;
+    height: 75vh;
+  }
+  #cardContainer .card {
+    padding: 0;
+    width: 50%;
+    height: 75vh;
+  }
+  #cardContainer .card h2 {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 2rem;
+  }
+  #cardContainer #card2 {
+    order: -1;
+  }
+  #cardContainer .fullCard {
+    width: 50%;
+    height: 75vh;
+    background-size: cover;
+  }
+  #cardContainer .fullCard p {
+    width: 80%;
+  }
+  #testimonialSection {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  #testimonialSection .testimonialContainer {
+    display: flex;
+    flex-direction: row;
+  }
+  #testimonialSection .testimonialContainer .testimonialCards {
+    text-align: center;
+  }
+  #testimonialSection .testimonialContainer .testimonialCards img {
+    padding-top: 5%;
+    width: 20%;
+    border-radius: 100%;
+  }
+  #testimonialSection .testimonialContainer .testimonialCards p {
+    padding: 0% 10% 0% 10%;
+  }
+  #imagesAside {
+    flex-wrap: wrap;
+  }
+  #imagesAside img {
+    width: 25%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
