@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -24,6 +25,16 @@ body {
   display: none;
 }
 
+.barlow {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  color: hsl(232deg, 10%, 55%);
+}
+
+.fraunces {
+  font-family: "Fraunces", serif;
+}
+
 header {
   width: 100%;
   height: 100vh;
@@ -43,10 +54,11 @@ header nav img {
 }
 header nav div {
   position: absolute;
+  z-index: 10;
   justify-content: space-evenly;
-  top: 0;
-  margin: 20% 20% 5%;
-  width: 70%;
+  top: 10px;
+  margin: 20% 0% 5%;
+  width: 90%;
   height: 40%;
   background-color: azure;
   text-align: center;
@@ -55,15 +67,16 @@ header nav div #triangle {
   transform: skewY(-45deg);
   margin: 0;
   position: absolute;
+  z-index: -1;
   width: 15%;
   height: 15%;
-  z-index: 100;
   background-color: azure;
   top: 0px;
   right: 0px;
 }
 header nav div a {
   text-decoration: none;
+  color: hsl(232deg, 10%, 55%);
 }
 header nav div #contactButton {
   width: 25%;
@@ -76,7 +89,6 @@ header #heroContainer {
   text-align: center;
 }
 header #heroContainer h1 {
-  font-family: "Noto Sans", sans-serif;
   font-size: 3em;
   font-weight: 900;
   text-align: center;
@@ -98,8 +110,11 @@ header #heroContainer #arrowDownImage {
   height: 60vh;
 }
 #cardContainer article h2 {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  color: hsl(212deg, 27%, 19%);
+}
+#cardContainer article p {
+  padding: 10%;
 }
 #cardContainer article a {
   text-decoration: none;
@@ -120,6 +135,10 @@ header #heroContainer #arrowDownImage {
   background-position: center;
   align-items: center;
   justify-content: flex-end;
+  color: hsl(167deg, 40%, 24%);
+}
+#cardContainer .fullCard p {
+  font-size: 1.1rem;
 }
 #cardContainer #card2 .learnBtn:hover {
   text-decoration-color: yellow;
@@ -189,22 +208,26 @@ footer .footerIconsContainer {
     background-size: 100% 100vh;
   }
   header nav #navbarLinks {
-    display: block;
+    width: 25%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    position: unset;
+    margin: 0;
+    padding: 0;
+    padding-right: 5%;
     flex-direction: row;
-    justify-content: end;
-    width: 40%;
   }
   header nav #navbarLinks a {
-    font-size: 1.2rem;
-    text-decoration: none;
-    padding-left: 5%;
+    display: inline;
+    padding-left: 7%;
   }
   header nav #navbarLinks #contactButton {
-    width: 25%;
-    padding: 2%;
-    margin: 2%;
-    border-radius: 100px;
-    align-content: center;
+    margin: 0;
+  }
+  header nav #navbarLinks #triangle {
+    display: none;
   }
   #cardContainer {
     flex-direction: row;
@@ -220,7 +243,6 @@ footer .footerIconsContainer {
     height: 75vh;
   }
   #cardContainer .card h2 {
-    font-family: "Noto Sans", sans-serif;
     font-size: 2rem;
   }
   #cardContainer #card2 {

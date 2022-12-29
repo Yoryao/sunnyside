@@ -7,8 +7,8 @@ contactBtn.addEventListener("mouseenter", verde);
 contactBtn.addEventListener("mouseleave", transparente);
 
 function verde (){
-    contactBtn.style.backgroundColor = "green";
-    contactBtn.style.color = "white";
+    contactBtn.style.backgroundColor = "hsl(51, 100%, 49%)";
+    contactBtn.style.color = "hsl(212, 27%, 19%)";
     contactBtn.style.fontWeight= "bold";
 
     
