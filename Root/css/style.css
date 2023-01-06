@@ -4,13 +4,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
   justify-content: center;
-  font-family: "Fraunces", serif;
+
 }
 
 .flex {
   display: flex;
 }
+.titles {
+  font-family: "Fraunces", serif;
+}
+
 .background-image {
   background-image: url(../images/desktop/image-header.jpg);
   background-size: cover;
@@ -24,7 +29,7 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 20px;
-  font-family: "Barlow", sans-serif;
+ 
 }
 .menu1 {
   padding: 20px;
@@ -38,12 +43,13 @@ header {
 }
 
 a:hover {
-  background-color: rgba(158, 196, 196, 0.564);
+  background-color: rgba(225, 229, 106, 0.564);
   border-radius: 30px;
   padding: 15px;
 }
 
 /*PRINCIPAL FRONT*/
+
 h1 {
   font-size: 3rem;
   color: hsl(51, 100%, 49%);
@@ -58,29 +64,88 @@ h1 {
 .grid {
 width: 100%;
 height: 100%;
+flex-wrap: wrap;
+
 }
 
 .box {
   display: flex;
-  width: 50%;
-  height: 50%;
-  flex-wrap: nowrap;
-  align-content: space-around;
-  
+  align-content: space-between;
+
 }
 
-.box-information {
-  margin: 60px;
-  align-items: left;
-  width: 100%;
-    
+.box-information-white {
+  justify-content: center;
+  width: 50%;
+  flex-direction: column;
+  align-content: center;
+  padding: 0px 100px;
+  
 }
+.box-information-image {
+   width: 50%;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 700;
+}
+p {
+  font-size: 25px;
+  padding: 35px 0px;
+  text-align: left;
+}
+
+.boxBackground{
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  
+}
+.Graphic-design {
+   background-image: url(../images/desktop/image-graphic-design.jpg);
+  ;
+  padding-top: 250px;
+}
+
+.Photography {
+  background-image: url(../images/desktop/image-photography.jpg);
+  padding-top: 250px;
+}
+
+.imageBox {
+  font-size: 20px;
+}
+
+/*CARDS*/
+.card-Container {
+justify-content: space-between;
+}
+
+.client {
+  color: grey;
+  padding: 200px 0px 0px 0px;
+}
+.card {
+flex-direction: column;
+text-align: center;
+padding: 100px;
+}
+
+.avatar {
+  border-radius: 70px;
+
+}
+
+
 
 
 
 
 /* Estilo del Aside creado por Jorge */
 
+/*
 #imagesAside {
   display: flex;
   width: 100%;
@@ -91,3 +156,4 @@ height: 100%;
   margin: 0;
   width: 25%;
 }
+*/
